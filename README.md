@@ -120,6 +120,16 @@ cd kindle2ss-modified
 python kindle2ss.py
 ```
 
+5－1. リポジトリのディレクトリに５のコマンドをpause付きでbatファイルを作ると便利かも
+
+```
+chcp 65001
+rem "キー押下後5秒でスタート"
+pause
+python kindle2ss.py
+pause
+```
+
 6. スクリーンショットが取得され、`output_年月日時分秒`という名前のフォルダに保存されます。
 
 7. 取得されたスクリーンショットを確認します。
