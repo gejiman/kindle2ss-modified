@@ -10,7 +10,7 @@ from PIL import Image
 
 
 # スクリーンショットを取得したい範囲の座標
-left, top, width, height = (480, 120, 600, 870)
+left, top, width, height = (440, 120, 1147, 870)
 # スクショ間隔(秒)
 span = 1
 # 出力フォルダ頭文字
@@ -69,7 +69,7 @@ while True:
         prev_img = s
         same_cnt = 0
         # 次のページ
-        pyautogui.keyDown('left')
+        pyautogui.press('left') #元はKeyDown
         # 画面の動作待ち
         time.sleep(span)
     else:
