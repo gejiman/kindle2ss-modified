@@ -10,10 +10,7 @@ This tool automatically takes screenshots of your Kindle screen and saves them a
 - pip
 - The following Python libraries
   - pyautogui
-  - win32gui
-  - win32ui
-  - win32con
-  - win32api
+  - pywin32
   - PIL
 
 ## Usage
@@ -21,19 +18,19 @@ This tool automatically takes screenshots of your Kindle screen and saves them a
 1. Clone this repository.
 
 ```
-git clone https://github.com/example/kindle-screenshot.git
+git clone https://github.com/gejiman/kindle2ss-modified.git
 ```
 
 2. Install the required Python libraries.
 
 ```
-pip install pyautogui win32gui win32ui win32con win32api Pillow
+pip install pyautogui pywin32 Pillow
 ```
 
 3. Open a terminal or command prompt, and navigate to the repository directory.
 
 ```
-cd kindle-screenshot
+cd kindle2ss-modified
 ```
 
 4. Navigate to the Kindle screen you want to screenshot.
@@ -41,7 +38,7 @@ cd kindle-screenshot
 5. Run the following command.
 
 ```
-python kindle-screenshot.py
+python kindle2ss.py
 ```
 
 6. The screenshot is taken and saved in a folder named `output_YYYYMMDDHHmmss`.
@@ -100,19 +97,19 @@ Kindleの画面を自動的にスクリーンショットし、ファイルと�
 1. 本リポジトリをクローンします。
 
 ```
-git clone https://github.com/example/kindle-screenshot.git
+git clone https://github.com/gejiman/kindle2ss-modified.git
 ```
 
 2. 必要なPythonライブラリをインストールします。
 
 ```
-pip install pyautogui win32gui win32ui win32con win32api Pillow
+pip install pyautogui pywin32 Pillow
 ```
 
 3. ターミナルまたはコマンドプロンプトを開き、リポジトリのディレクトリに移動します。
 
 ```
-cd kindle-screenshot
+cd kindle2ss-modified
 ```
 
 4. スクリーンショットを取得したいKindleの画面に移動します。
@@ -120,7 +117,7 @@ cd kindle-screenshot
 5. 以下のコマンドを実行します。
 
 ```
-python kindle-screenshot.py
+python kindle2ss.py
 ```
 
 6. スクリーンショットが取得され、`output_年月日時分秒`という名前のフォルダに保存されます。
