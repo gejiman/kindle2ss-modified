@@ -11,10 +11,11 @@ daishir0/kindle2ssからフォークしたものです。
 - pip
 - 以下のPythonライブラリ
   - pyautogui
-  - win32gui
-  - win32ui
-  - win32con
-  - win32api
+  - pywin32
+  　- win32gui
+  　- win32ui
+  　- win32con
+  　- win32api
   - PIL
 
 ## 使い方
