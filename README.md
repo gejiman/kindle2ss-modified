@@ -1,84 +1,9 @@
-# Kindle Screenshot Automation Tool
-
-This tool automatically takes screenshots of your Kindle screen and saves them as files.
-
-※日本語のREADMEは下部にあります。
-
-## Requirements
-
-- Python3
-- pip
-- The following Python libraries
-  - pyautogui
-  - pywin32
-  - PIL
-
-## Usage
-
-1. Clone this repository.
-
-```
-git clone https://github.com/gejiman/kindle2ss-modified.git
-```
-
-2. Install the required Python libraries.
-
-```
-pip install pyautogui pywin32 Pillow
-```
-
-3. Open a terminal or command prompt, and navigate to the repository directory.
-
-```
-cd kindle2ss-modified
-```
-
-4. Navigate to the Kindle screen you want to screenshot.
-
-5. Run the following command.
-
-```
-python kindle2ss.py
-```
-
-6. The screenshot is taken and saved in a folder named `output_YYYYMMDDHHmmss`.
-
-7. Check the captured screenshot.
-
-## Configuration
-
-You can change the coordinates of the area to be screenshot, the interval between screenshots, the output folder name, and the initial characters of the output file name.
-
-```python
-# Coordinates of the area to be screenshot
-left, top, width, height = (480, 120, 600, 870)
-# Screenshot interval (seconds)
-span = 1
-# Output folder initial characters
-h_foldername = "output"
-# Output file initial characters
-h_filename = "picture"
-```
-
-Also, the screenshot process will automatically stop if the same screen appears three times in a row. You can change this number.
-
-```python
-# Terminate when the same image appears 3 times
-if same_cnt >= 3:
-    break
-```
-
-## Precautions
-
-- This tool only works in a Windows environment.
-- When using this tool, use it only for Kindle screens.
-- When using this tool, please comply with terms of use and copyright laws.
-
----
+daishir0/kindle2ssからフォークしたものです。
+自分の環境で動かなかった箇所を直しています。
 
 # Kindleスクリーンショット自動取得ツール
 
-Kindleの画面を自動的にスクリーンショットし、ファイルとして保存するツールです。
+任意の画面領域を自動的にスクリーンショットし、ファイルとして保存するツールです。
 
 ## 必要なもの
 
@@ -160,5 +85,4 @@ if same_cnt >= 3:
 ## 注意事項
 
 - このツールはWindows環境でのみ動作します。
-- このツールを使用する際には、Kindleの画面に対してのみ使用してください。
 - このツールを使用する際には、利用規約や著作権に関する法律を遵守してください。
